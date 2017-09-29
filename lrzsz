@@ -1,0 +1,10 @@
+对于经常使用Linux系统的人员来说，少不了将本地的文件上传到服务器或者从服务器上下载文件到本地，rz / sz命令很方便的帮我们实现了这个功能，但是很多Linux系统初始并没有这两个命令。今天，我们就简单的讲解一下如何安装和使用rz、sz命令。
+1.软件安
+ --> wget http://www.ohse.de/uwe/releases/lrzsz-0.12.20.tar.gz
+ --> tar zxvf lrzsz-0.12.20.tar.gz && cd lrzsz-0.12.20
+ --> ./configure && make && make install
+ 
+2. 创建软链接，并命名为rz/sz：
+ --> cd /usr/bin
+ --> ln -s /usr/local/bin/lrz rz
+ --> ln -s /usr/local/bin/lsz sz
